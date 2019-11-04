@@ -477,7 +477,7 @@
 									i.val(i.attr('defaultValue'));
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
-
+/**data abudancy of the given coumn will lead  */
 									if (i.val() == '') {
 										i.hide();
 										x.show();
