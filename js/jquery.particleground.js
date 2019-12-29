@@ -196,7 +196,7 @@
         x: Math.ceil(Math.random() * canvas.width),
         y: Math.ceil(Math.random() * canvas.height)
       }
-      // Random particle speed, within min and max values
+      
       this.speed = {}
       switch (options.directionX) {
         case 'left':
