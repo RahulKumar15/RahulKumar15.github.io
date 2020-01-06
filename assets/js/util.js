@@ -1,9 +1,6 @@
 (function($) {
 
-	/**
-	 * Generate an indented list of links from a nav. Meant for use with panel().
-	 * @return {jQuery} jQuery object.
-	 */
+	
 	$.fn.navList = function() {
 
 		var	$this = $(this);
@@ -34,11 +31,7 @@
 
 	};
 
-	/**
-	 * Panel-ify an element.
-	 * @param {object} userConfig User config.
-	 * @return {jQuery} jQuery object.
-	 */
+	
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
@@ -477,7 +470,7 @@
 									i.val(i.attr('defaultValue'));
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
-/**data abudancy of the given coumn will lead  */
+
 									if (i.val() == '') {
 										i.hide();
 										x.show();
@@ -518,11 +511,7 @@
 
 	};
 
-	/**
-	 * Moves elements to/from the first positions of their respective parents.
-	 * @param {jQuery} $elements Elements (or selector) to move.
-	 * @param {bool} condition If true, moves elements to the top. Otherwise, moves elements back to their original locations.
-	 */
+
 	$.prioritize = function($elements, condition) {
 
 		var key = '__prioritize';
