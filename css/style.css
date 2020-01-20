@@ -21,7 +21,6 @@ body {
   }
 }
 
-
 #page {
   position: relative;
   overflow-x: hidden;
@@ -551,19 +550,6 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #fh5co-featured-testimony .fh5co-heading {
     margin-bottom: 50px;
-  }
-  iframe-container{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-  }
-  .iframe-container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 }
 #fh5co-featured-testimony .fh5co-heading h2 {
