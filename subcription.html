@@ -48,13 +48,12 @@
 			<![endif]-->
 
     <!-- added here the experimentation code -->
-    <link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" href="form2.css">
 </head>
 
 <body>
 
 	
-
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
@@ -64,7 +63,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-center logo-wrap">
 						<div id="fh5co-logo">
-							<a href="index.html">TRUCKERZOOM
+							<a href="index.html">TruckerZoom
 								<span>.</span>
 							</a>
 						</div>
@@ -75,12 +74,12 @@
 								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="subcription.html">Subscripton</a>
+								<a href="subcription.html">subscription</a>
 							</li>
 							<li>
 								<a href="contact.html">Contact Us</a>
 							</li>
-							
+						
 						</ul>
 					</div>
 				</div>
@@ -129,7 +128,7 @@
 
 									</div>
 									<div class="timeline-body">
-										<p>we provide a android application that gives a seamless driver platform<br>
+										<p>we provide a mobile application that gives a seamless driver platform<br>
 										Permalinks can be generated and sent to customers to ease data input</p>
 									</div>
 								</div>
@@ -239,42 +238,18 @@
 			</div>
 		</div>
 
-		<form action="https://formspree.io/xwklreqr" method="POST" class="container-contact100" role="form">
-		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					Contact Us 
-				</span>
+		<div class="contact-section">
 
-				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
-					<input class="input100" type="text" name="name" placeholder="Full Name">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
-					<input class="input100" type="text" name="email" placeholder="E-mail">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
-					<input class="input100" type="text" name="phone" placeholder="Phone">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
-					<textarea class="input100" name="message" placeholder="Your Message(optional)"></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						<span>
-							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-							Send
-						</span>
-					</button>
-				</div>
-			</form>
+            <h1>Send us an email or call directly.</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="https://formspree.io/xwklreqr" method="post">
+              <input type="text" class="contact-form-text" placeholder="Your name">
+              <input type="email" class="contact-form-text" placeholder="Your email">
+              <input type="text" class="contact-form-text" placeholder="Your phone">
+              <textarea class="contact-form-text" placeholder="Your message(optional)"></textarea>
+              <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+          </div>
 		</div>
 	</div>
 
