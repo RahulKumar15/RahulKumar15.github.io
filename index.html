@@ -365,25 +365,28 @@
 		<div class="contact-section">
 
 	   <h1>Send us an email or call directly.</h1>
-	   <form action="https://formspree.io/xwklreqr" method="POST" class="form-horizontal" role="form">
-		<div class="form-group">
-		  <input type="text" name="name" placeholder="Your Name" class="form-control">
-		</div>
-		<div class="form-group">
-		  <input type="email" name="email" placeholder="Your Email" class="form-control">
-		</div>
-		<div class="form-group">
-		  <textarea name="message" placeholder="Your message" class="form-control"></textarea>
-		</div>
-		<!-- Hidden elements here -->
-		<input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
-		<input type="hidden" name="_next" value="thanks.html" />
-		<!-- Submit button -->
-		<div class="form-group">
-		  <input type="submit" value="Send Email" class="btn btn-primary btn-xl">
-		</div>
-	  </form>
+	   <div class="border"></div>
+	   <form class="contact-form" action="https://formspree.io/xwklreqr" method="POST" >
+	
+		  <input type="text" name="name" placeholder="Your Name" class="contact-form-text">
+		
+	
+		  <input type="email" name="email" placeholder="Your Email" class="contact-form-text">
 
+	
+			<input type="text" name="Phone" placeholder="Your phone number" class="contact-form-text">
+		 
+	
+		  <textarea name="message" placeholder="Your message" class="contact-form-text"></textarea>
+	
+		<!-- Hidden elements here -->
+		
+		<!-- Submit button -->
+		
+		  <input type="submit" value="Send Email" class="contact-form-btn">
+		
+	  </form>
+			</div>
 
 
              <!--    <div class="border"></div>
