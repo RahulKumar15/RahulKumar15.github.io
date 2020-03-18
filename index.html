@@ -1,286 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147620894-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-147620894-1');
-</script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-
-
-  
-  <title>Rahul pathak</title>
-
- 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-  
-  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-  rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-  rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="css/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS -->
-  <link href="css/creative.min.css" rel="stylesheet">
-
-  <!-- Index CSS -->
-  <link href="css/index.css" rel="stylesheet">
-
-  <!-- Custom favicon -->
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
- 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147620894-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-147620894-1');
-</script>
-
-
+	<title>Stripe Checker</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="assets/common/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body background="tech-gif-1.gif" text=white>
+	<br>
+        <div class="row col-md-12">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div class="card col-sm-8">
+  <h5 class="card-body h6">⚙ Reboot13 ⍉</h5>
+  <div class="card-body">
+<div class="md-form">
+	<div class="col-md-12">
+  <textarea type="text" style="text-align: center;" id="lista" class="md-textarea form-control" rows="4" placeholder="Enter Cards"></textarea>
+  <label for="lista">XXXXXXXXXXXXXXXX|XX|XXXX|XXX</label>
+</div>
+</div>
+<center>
+ <button class="btn btn-primary" style="width: 200px; outline: none;" id="testar" onclick="enviar()" >START</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="btn btn-danger" style="width: 200px; outline: none;">STOP</button>
+</center>
+<div class="col-md-12">
+<div class="card">
+<div style="position: absolute;
+        top: 0;
+        right: 0;">
+	<button id="mostra" class="btn btn-primary">SHOW/HIDE</button>
+</div>
+  <div class="card-body">
+    <h6 style="font-weight: bold;" class="card-title">Approved - <span  id="cLive2" class="badge badge-success">0</span></h6>
+    <div id="bode"><span id=".aprovadas" class="aprovadas"></span>
+</div>
+  </div>
+</div>
+</div>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
+<br>
+<br>
+<br>
 
-      
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Rahul pathak</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" 
-              data-toggle="collapse" data-target="#navbarResponsive" 
-              aria-controls="navbarResponsive" aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Education</a>
-          </li>
-         
-					<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#funstuff">Fun</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#poetry">Poetry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-          </li>
-       
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="blog.html">blog</a>
-          </li>
-        </ul>
-      </div>
+<div class="col-md-12">
+<div class="card">
+	<div style="position: absolute;
+        top: 0;
+        right: 0;">
+	<button id="mostra2" class="btn btn-primary">SHOW/HIDE</button>
+</div>
+  <div class="card-body">
+    <h6 style="font-weight: bold;" class="card-title">Declined - <span id="cDie2" class="badge badge-danger">0</span></h6>
+    <div id="bode2"><span id=".reprovadas" class="reprovadas"></span>
     </div>
-  </nav>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div class="card col-sm-2">
+  <h5 class="card-body h6">ιиfσямαтισиѕ</h5>
+  <div class="card-body">
+  	<span>Status:</span><span class="badge badge-secondary"> Waiting For Command.</span>
+<div class="md-form">
+	<span>Approved:</span>&nbsp<span id="cLive" class="badge badge-success">0</span>
+	<span>Declined:</span>&nbsp<span id="cDie" class="badge badge-danger"> 0</span>
+	<span>Checked:</span>&nbsp<span id="total" class="badge badge-info">0</span>
+	<span>Total:</span>&nbsp<span id="carregadas" class="badge badge-dark">0</span>
+</div>
+  </div>
+</div>
+</div>
+<br>
 
-  
-  <header class="masthead text-center text-white d-flex">
-    <div class="container my-auto">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1 class="text-uppercase">
-            <strong>Rahul pathak</strong>
-          </h1>
-          <hr>
-        </div>
-        <div class="col-lg-8 mx-auto">
-          <p class="text-faded mb-5">Creator.Explorer.Thinker</p>
-          <p class="text-faded">CSE Student At
-            <a class="text-white-link" href="https://www.lpu.in/" class="text-blue">Lovely Professional University</a></p>
-          <p class="text-italic mb-5">
-             AI ENTHUSIAST</a>
-          </p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More!</a>
-        </div>
-      </div>
-    </div>
-  </header>
 
- 
-  <section class="bg-primary" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">Education</h2>
-          <hr class="light my-4">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-          <i class="fa fa-4x fa-id-card-o text-faded sr-icons"></i>
-          <h3 class="text-white">Degree</h3>
-          <p class="text-faded">Persuing Bachelor of Technology in Computer Science and engineering  from
-          <a class="text-white-link" href="https://www.lpu.in/" class="text-blue">Lovely Professional University(2019-23)</a></p>
-        </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
 
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center div-padding-fix">
-          <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
-          <h3 class="text-white">Senior Secondary</h3>
-          <p class="text-faded">Competed in 2018 with PCM</p>
-        </div>
+$(document).ready(function(){
 
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-          <i class="fa fa-4x fa-code text-faded sr-icons"></i>
-          <h3 class="text-white">Languages</h3>
-          <p class="text-faded no-margin">Python, JavaScript, Java</p>
-          <p class="text-faded"> and C / C++</p>
-        </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-          <i class="fa fa-4x fa-file-code-o text-faded sr-icons"></i>
-          <h3 class="text-white">Skills</h3>
-          <p class="text-faded no-margin">Pandas,Numpy,Matplotlib</p>
-          <p class="text-faded">Neural Network</p>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#funstuff">
-        Boring, show me some fun stuff!</a>
-     
-      </div>
-    </div>
-  <section class="bg-light" id="funstuff">
-    <div class="container">
-      <div class="row images-vcenter">
-			
-				<div class="col-lg-12 pb-3 text-center">
-          <h2 class="section-heading">Fun Stuff</h2>
-          <hr class="hr-black">
-        </div>
-			
-				<!-- Fun stuff includes links to Photography, My world , Content, and Spotify playlists -->
-				<div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="photography">
-						<img src="img/portfolio/thumbnails/photo-1513031300226-c8fb12de9ade.jpg" 
-								 class="img-fluid images-border"
-								 alt="Photography">
-					</a>
-          <h3 class="mt-4 mb-4">Photography</h3>
-        </div>
-			
-			
-				
-				<div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="music.html">
-						<img src="img/portfolio/thumbnails/music.jpg" 
-								 class="img-fluid"
-								 alt="Music geners">
-					</a>
-          <h3 class="mt-4 mb-4">World of Music</h3>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#poetry">
-       Jump to Writing Section</a>
-     
-      </div>
-		</div>
-	</section>
+    $("#bode").hide();
+	$("#esconde").show();
+	
+	$('#mostra').click(function(){
+	$("#bode").slideToggle();
+	});
 
-  <!--need to add new section-->
-  <section class="bg-primary" id="poetry">
-    <div class="container">
-      <div class="row images-vcenter">
-			
-				<div class="col-lg-12 pb-3 text-center">
-          <h2 class="section-heading">POETRY</h2>
-          <hr class="hr-black">
-        </div>
-          <!--poetry division-->
-        <div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="myworld">
-						<img src="img/portfolio/thumbnails/hindi.jpg" 
-								 class="img-fluid images-border-In My World" 
-								 alt="Life">
-					</a>
-          <h3 class="mt-4 mb-4">KAVYA_KOSH</h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="contentwriting.html">
-						<img src="img/portfolio/thumbnails/contentwriting.jpg" 
-								 class="img-fluid images-border-In My World" 
-								 alt="contentwriting">
-					</a>
-          <h3 class="mt-4 mb-4">CONTENT WRITING</h3>
-        </div>
-        </div>
-        
-        </div>
-        </section>
-        <section class="min-padding" id="contact">
-          <div class="container">
-          
-            <!-- Contact Rahul -->
-            <div class="row">
-              <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading">
-                
-                <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
-              <!---->    Contact Rahul</h2>
-                <hr class="primary">
-                <p>If you need any kind of project related to web development , you
-                  can send / spam (🙁) him a message using the form below.</p>
-                
-                  <form action="https://formspree.io/xwklreqr" method="POST" class="form-horizontal" role="form">
-                  <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <textarea name="message" placeholder="Your message" class="form-control"></textarea>
-                  </div>
-                  <!-- Hidden elements here -->
-                  <input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
-                  <input type="hidden" name="_next" value="thanks.html" />
-                  <!-- Submit button -->
-                  <div class="form-group">
-                    <input type="submit" value="Send Email" class="btn btn-primary btn-xl">
-                  </div>
-                </form>
-              </div>
-            </div>
-            
-          
- 
-       
-  <!-- jQuery 3.3.1 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="           
-          crossorigin="anonymous"></script>
-  
-  <!-- Bootstrap 4.1 JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
-  <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/scrollreveal.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/creative.min.js"></script>
-  
+});
+
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+    $("#bode2").hide();
+	$("#esconde2").show();
+	
+	$('#mostra2').click(function(){
+	$("#bode2").slideToggle();
+	});
+
+});
+
+</script>
+
+<script title="ajax do checker">
+    function enviar() {
+        var linha = $("#lista").val();
+        var linhaenviar = linha.split("\n");
+        var total = linhaenviar.length;
+        var ap = 0;
+        var rp = 0;
+        linhaenviar.forEach(function(value, index) {
+            setTimeout(
+                function() {
+                    $.ajax({
+                        url: 'api.php?lista=' + value,
+                        type: 'GET',
+                        async: true,
+                        success: function(resultado) {
+                            if (resultado.match("#Aprovada")) {
+                                removelinha();
+                                ap++;
+                                aprovadas(resultado + "");
+                            }else {
+                                removelinha();
+                                rp++;
+                                reprovadas(resultado + "");
+                            }
+                            $('#carregadas').html(total);
+                            var fila = parseInt(ap) + parseInt(rp);
+                            $('#cLive').html(ap);
+                            $('#cDie').html(rp);
+                            $('#total').html(fila);
+                            $('#cLive2').html(ap);
+                            $('#cDie2').html(rp);
+                        }
+                    });
+                }, 500 * index);
+        });
+    }
+    function aprovadas(str) {
+        $(".aprovadas").append(str + "<br>");
+    }
+    function reprovadas(str) {
+        $(".reprovadas").append(str + "<br>");
+    }
+    function removelinha() {
+        var lines = $("#lista").val().split('\n');
+        lines.splice(0, 1);
+        $("#lista").val(lines.join("\n"));
+    }
+</script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
 </body>
+
 </html>
