@@ -1,6 +1,6 @@
 .section-blog-header {
   padding: 1em 0 4em 0;
-  background: #444; }
+  background: rgb(0, 0, 0); }
   .section-blog-header h3 {
     color: white;
     font-size: 1.4em;
@@ -103,12 +103,12 @@
     .section-blog .pagination-links .pagination-link {
       display: inline-block;
       margin: 0 1.75em;
-      color: #888;
+      color: rgb(255, 255, 255);
       font-weight: 500; }
 
 .section-blog-post {
   padding: 3.25em 0 6em 0;
-  background: white; }
+  background: rgb(0, 0, 0); }
   .section-blog-post .post-container {
     max-width: 740px;
     padding: 0 20px;
@@ -118,15 +118,15 @@
   .section-blog-post h1 {
     font-weight: 600;
     font-size: 1.8em;
-    color: #242E35; }
+    color: rgb(255, 255, 255); }
   .section-blog-post .by {
     display: block;
     font-size: 0.85em;
     margin-bottom: 1.75em;
-    color: #666; }
+    color: rgb(255, 255, 255); }
     .section-blog-post .by strong {
       font-weight: 700;
-      color: #111; }
+      color: rgb(255, 255, 255); }
   .section-blog-post .featured-image {
     margin-bottom: 2.5em; }
   .section-blog-post .post-author {
